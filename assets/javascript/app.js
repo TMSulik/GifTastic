@@ -8,8 +8,7 @@ var TOPICS = [
   "Admiration",
   "Anticipation",
   "Pride",
-  "Shame",
-  "Guilt"
+  "Shame"
 ];
 
 var buttonCount = TOPICS.length;
@@ -29,7 +28,7 @@ function renderButtons(){
 
 function addButton(str) {
   var btn = $("<button>");
-  btn.addClass("species");
+  // btn.addClass("species");
   btn.text(str);
   $(".buttons-view").append(btn);
 }
@@ -176,11 +175,11 @@ $(document).ready(function(){
   //   // });
   // });
 
-
   $('button').click(function(){
     var emotion = this.innerHTML;
     createImageElements(emotion);
     appendElement(emotion);
+    $("#image-header").text("Click on image to animate or freeze");
   });
 
   $("#add-emotion").on("click", function(event){
@@ -189,7 +188,7 @@ $(document).ready(function(){
     TOPICS.push(newCategory);
     renderButtons();
     enableButtons();
-    appendElement(newCategory);
+    // appendElement(newCategory);
     // Clear textbox
     $("#new-category").val("");
   });

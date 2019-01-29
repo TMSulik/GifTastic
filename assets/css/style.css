@@ -1,12 +1,35 @@
+.container {
+  background: black;
+}
 
+.jumbotron {
+  background:lightgrey;
+}
 
 button {
   margin: 8px;
+  background: darkslategrey;
+  color: yellow;
 }
 
-#todo-item {
+h1{
+  font-size: 3em;
+  font-family: "Apple Chancery";
+}
+
+
+#new-items {
   font-weight: 700;
   font-size: 2em;
+}
+
+#add-emotion {
+  margin: 8px;
+}
+
+#image-header {
+  color: lightgrey;
+  margin: 8px;
 }
 
 /* .create-button {
